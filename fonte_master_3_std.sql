@@ -19,11 +19,11 @@
             ld.motivo_de_lost,
             a0.data_qualificacao,
                 CASE
-                    WHEN ld.card_creator::text = 'rodrigoschwartz6'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'customersuccessowp'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'rodrigobatistapereira1'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'erickjoseduartesilva'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'jorelmartinshp'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
                     ELSE 'Outros'::text
                 END AS card_creator_group,
                 CASE
@@ -42,11 +42,11 @@
              LEFT JOIN clients cl ON ld.client_id::text = cl.client_id::text
           GROUP BY a0.data_qualificacao, cl.client_type, cl.client_name, cl.client_id, cl.client_squad, cl.client_cluster, cl.client_segment, cl.client_main_name, cl.client_main_type, cl.client_main_id, ld.card_creator, ld.motivo_de_lost, (
                 CASE
-                    WHEN ld.card_creator::text = 'rodrigoschwartz6'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'customersuccessowp'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'rodrigobatistapereira1'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'erickjoseduartesilva'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'jorelmartinshp'::text THEN 'Lead HP'::text
+                   WHEN ld.card_creator::text = '-::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
                     ELSE 'Outros'::text
                 END), (
                 CASE
@@ -82,11 +82,11 @@
             ld.motivo_de_lost,
             b0.data_oportunidade,
                 CASE
-                    WHEN ld.card_creator::text = 'rodrigoschwartz6'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'customersuccessowp'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'rodrigobatistapereira1'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'erickjoseduartesilva'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'jorelmartinshp'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
                     ELSE 'Outros'::text
                 END AS card_creator_group,
                 CASE
@@ -105,11 +105,11 @@
              LEFT JOIN clients cl ON ld.client_id::text = cl.client_id::text
           GROUP BY b0.data_oportunidade, cl.client_type, cl.client_name, cl.client_squad, cl.client_cluster, cl.client_segment, cl.client_main_name, cl.client_main_type, cl.client_main_id, ld.client_id, ld.card_creator, ld.motivo_de_lost, (
                 CASE
-                    WHEN ld.card_creator::text = 'rodrigoschwartz6'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'customersuccessowp'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'rodrigobatistapereira1'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'erickjoseduartesilva'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'jorelmartinshp'::text THEN 'Lead HP'::text
+                   WHEN ld.card_creator::text = '-::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
                     ELSE 'Outros'::text
                 END), (
                 CASE
@@ -139,11 +139,11 @@
             ld.motivo_de_lost,
             date(ld.create_date - '03:00:00'::interval) AS data_periodo,
                 CASE
-                    WHEN ld.card_creator::text = 'rodrigoschwartz6'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'customersuccessowp'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'rodrigobatistapereira1'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'erickjoseduartesilva'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'jorelmartinshp'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
                     ELSE 'Outros'::text
                 END AS card_creator_group,
                 CASE
@@ -161,11 +161,11 @@
              LEFT JOIN clients cl ON ld.client_id::text = cl.client_id::text
           GROUP BY (date(ld.create_date - '03:00:00'::interval)), cl.client_type, cl.client_name, cl.client_squad, cl.client_cluster, cl.client_segment, cl.client_main_name, cl.client_main_type, cl.client_main_id, ld.client_id, ld.card_creator, ld.motivo_de_lost, (
                 CASE
-                    WHEN ld.card_creator::text = 'rodrigoschwartz6'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'customersuccessowp'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'rodrigobatistapereira1'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'erickjoseduartesilva'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'jorelmartinshp'::text THEN 'Lead HP'::text
+                   WHEN ld.card_creator::text = '-::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
                     ELSE 'Outros'::text
                 END), (
                 CASE
@@ -201,11 +201,11 @@
             ld.motivo_de_lost,
             d0.data_agendamento,
                 CASE
-                    WHEN ld.card_creator::text = 'rodrigoschwartz6'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'customersuccessowp'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'rodrigobatistapereira1'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'erickjoseduartesilva'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'jorelmartinshp'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
                     ELSE 'Outros'::text
                 END AS card_creator_group,
                 CASE
@@ -224,11 +224,11 @@
              LEFT JOIN clients cl ON ld.client_id::text = cl.client_id::text
           GROUP BY d0.data_agendamento, cl.client_type, cl.client_name, cl.client_squad, cl.client_cluster, cl.client_segment, cl.client_main_name, cl.client_main_type, cl.client_main_id, ld.client_id, ld.card_creator, ld.motivo_de_lost, (
                 CASE
-                    WHEN ld.card_creator::text = 'rodrigoschwartz6'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'customersuccessowp'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'rodrigobatistapereira1'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'erickjoseduartesilva'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'jorelmartinshp'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
                     ELSE 'Outros'::text
                 END), (
                 CASE
@@ -264,11 +264,11 @@
             ld.motivo_de_lost,
             e0.data_visitou,
                 CASE
-                    WHEN ld.card_creator::text = 'rodrigoschwartz6'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'customersuccessowp'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'rodrigobatistapereira1'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'erickjoseduartesilva'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'jorelmartinshp'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
                     ELSE 'Outros'::text
                 END AS card_creator_group,
                 CASE
@@ -287,11 +287,11 @@
              LEFT JOIN clients cl ON ld.client_id::text = cl.client_id::text
           GROUP BY e0.data_visitou, cl.client_type, cl.client_name, cl.client_squad, cl.client_cluster, cl.client_segment, cl.client_main_name, cl.client_main_type, cl.client_main_id, ld.client_id, ld.card_creator, ld.motivo_de_lost, (
                 CASE
-                    WHEN ld.card_creator::text = 'rodrigoschwartz6'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'customersuccessowp'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'rodrigobatistapereira1'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'erickjoseduartesilva'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'jorelmartinshp'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
                     ELSE 'Outros'::text
                 END), (
                 CASE
@@ -350,11 +350,11 @@ f0 AS (
             ld.motivo_de_lost,
             f0.data_fechamento,
                 CASE
-                    WHEN ld.card_creator::text = 'rodrigoschwartz6'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'customersuccessowp'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'rodrigobatistapereira1'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'erickjoseduartesilva'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'jorelmartinshp'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
                     ELSE 'Outros'::text
                 END AS card_creator_group,
                 CASE
@@ -373,11 +373,11 @@ f0 AS (
              LEFT JOIN clients cl ON ld.client_id::text = cl.client_id::text
           GROUP BY f0.data_fechamento, cl.client_type, cl.client_name, cl.client_squad, cl.client_cluster, cl.client_segment, cl.client_main_name, cl.client_main_type, cl.client_main_id, ld.client_id, ld.card_creator, ld.motivo_de_lost, (
                 CASE
-                    WHEN ld.card_creator::text = 'rodrigoschwartz6'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'customersuccessowp'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'rodrigobatistapereira1'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'erickjoseduartesilva'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'jorelmartinshp'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
                     ELSE 'Outros'::text
                 END), (
                 CASE
@@ -413,11 +413,11 @@ f0 AS (
             ld.motivo_de_lost,
             g0.data_lost,
                 CASE
-                    WHEN ld.card_creator::text = 'rodrigoschwartz6'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'customersuccessowp'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'rodrigobatistapereira1'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'erickjoseduartesilva'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'jorelmartinshp'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
                     ELSE 'Outros'::text
                 END AS card_creator_group,
                 CASE
@@ -436,11 +436,11 @@ f0 AS (
              LEFT JOIN clients cl ON ld.client_id::text = cl.client_id::text
           GROUP BY g0.data_lost, cl.client_type, cl.client_name, cl.client_squad, cl.client_cluster, cl.client_segment, cl.client_main_name, cl.client_main_type, cl.client_main_id, ld.client_id, ld.card_creator, ld.motivo_de_lost, (
                 CASE
-                    WHEN ld.card_creator::text = 'rodrigoschwartz6'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'customersuccessowp'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'rodrigobatistapereira1'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'erickjoseduartesilva'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'jorelmartinshp'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
                     ELSE 'Outros'::text
                 END), (
                 CASE
@@ -476,11 +476,11 @@ f0 AS (
             ld.motivo_de_lost,
             h0.data_contato_futuro,
                 CASE
-                    WHEN ld.card_creator::text = 'rodrigoschwartz6'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'customersuccessowp'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'rodrigobatistapereira1'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'erickjoseduartesilva'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'jorelmartinshp'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
                     ELSE 'Outros'::text
                 END AS card_creator_group,
                 CASE
@@ -499,11 +499,11 @@ f0 AS (
              LEFT JOIN clients cl ON ld.client_id::text = cl.client_id::text
           GROUP BY h0.data_contato_futuro, cl.client_type, cl.client_name, cl.client_squad, cl.client_cluster, cl.client_segment, cl.client_main_name, cl.client_main_type, cl.client_main_id, ld.client_id, ld.card_creator, ld.motivo_de_lost, (
                 CASE
-                    WHEN ld.card_creator::text = 'rodrigoschwartz6'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'customersuccessowp'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'rodrigobatistapereira1'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'erickjoseduartesilva'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'jorelmartinshp'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
                     ELSE 'Outros'::text
                 END), (
                 CASE
@@ -539,11 +539,11 @@ f0 AS (
             ld.motivo_de_lost,
             i0.data_pre_oportunidade,
                 CASE
-                    WHEN ld.card_creator::text = 'rodrigoschwartz6'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'customersuccessowp'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'rodrigobatistapereira1'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'erickjoseduartesilva'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'jorelmartinshp'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
                     ELSE 'Outros'::text
                 END AS card_creator_group,
                 CASE
@@ -562,11 +562,11 @@ f0 AS (
              LEFT JOIN clients cl ON ld.client_id::text = cl.client_id::text
           GROUP BY i0.data_pre_oportunidade, cl.client_type, cl.client_name, cl.client_squad, cl.client_cluster, cl.client_segment, cl.client_main_name, cl.client_main_type, cl.client_main_id, ld.client_id, ld.card_creator, ld.motivo_de_lost, (
                 CASE
-                    WHEN ld.card_creator::text = 'rodrigoschwartz6'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'customersuccessowp'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'rodrigobatistapereira1'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'erickjoseduartesilva'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'jorelmartinshp'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
                     ELSE 'Outros'::text
                 END), (
                 CASE
@@ -603,11 +603,11 @@ f0 AS (
             i0.data_pre_oportunidade,
             j0.em_negociacao,
                 CASE
-                    WHEN ld.card_creator::text = 'rodrigoschwartz6'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'customersuccessowp'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'rodrigobatistapereira1'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'erickjoseduartesilva'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'jorelmartinshp'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
                     ELSE 'Outros'::text
                 END AS card_creator_group,
                 CASE
@@ -626,11 +626,11 @@ f0 AS (
              LEFT JOIN clients cl ON ld.client_id::text = cl.client_id::text
           GROUP BY j0.em_negociacao, cl.client_type, cl.client_name, cl.client_squad, cl.client_cluster, cl.client_segment, cl.client_main_name, cl.client_main_type, cl.client_main_id, ld.client_id, ld.card_creator, ld.motivo_de_lost, (
                 CASE
-                    WHEN ld.card_creator::text = 'rodrigoschwartz6'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'customersuccessowp'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'rodrigobatistapereira1'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'erickjoseduartesilva'::text THEN 'Lead HP'::text
-                    WHEN ld.card_creator::text = 'jorelmartinshp'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
+                    WHEN ld.card_creator::text = '-'::text THEN 'Lead HP'::text
                     ELSE 'Outros'::text
                 END), (
                 CASE
